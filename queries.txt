@@ -1,0 +1,41 @@
+47 ?- consult(['/Users/abraralkhalifa/Prolog/tree.pl']).
+true.
+
+48 ?- mother(mariam, fatimah).
+false.
+
+49 ?- mother(X, Y).
+X = mariam,
+Y = ahmad ;
+X = mariam,
+Y = aziz ;
+X = rabab,
+Y = layla.
+
+50 ?- father(aziz, fatimah).
+true.
+
+51 ?- father(X,Y).
+X = abduallah,
+Y = ahmad ;
+X = abduallah,
+Y = aziz ;
+X = ahmad,
+Y = mohammad ;
+X = ahmad,
+Y = ali ;
+X = aziz,
+Y = fatimah ;
+X = aziz,
+Y = rabab.
+52 ?- sister(layla, mariam).
+false.
+
+53 ?- sister(fatimah, rabab).
+true.
+
+54 ?- brother(aziz, ahmad).
+true.
+
+55 ?- brother(abduallah, ali).
+false.
